@@ -22,10 +22,72 @@
   color: white;
 }
 
-.table_container{
-  text-align: center;
+
+table, th, td{
+  border: 2px solid black;
+  padding: 0.3rem 1rem;
+  border-collapse: collapse;
+}
+ th{
+  width: 350px;
+  height: 70px;
+ }
+
+ th:nth-child(1){
+  width: 150px
+ }
+ th:nth-child(2){
+  width: 450px
+ }
+
+
+
+.table_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
 }
 
-table{
-  align-items: center;
+.table_container h1 {
+    
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.table_container button {
+  padding: .5rem;
+  margin: 1rem;
+  font-size: 25px;
+
+}
+
+.table_container button:hover {
+  cursor: pointer;
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.form_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  height: 80vh;
+}
+
+.form_container form label, input {
+  font-size: 30px;
+}
+
+.form_container form input {
+  padding: .5rem;
+  margin: 10px;
+  width: 450px;
+}
+
+form label:nth-child(1){
+  margin-right: 40px;
+}
+
+form button{
+  font-size: 30px;
 }
